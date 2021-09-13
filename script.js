@@ -3,7 +3,7 @@ fetch('https://rickandmortyapi.com/api/character/')
   .then(characters => showCharacters(characters.results));
 
 showCharacters = characters => {
-  const charactersDiv = document.querySelector(‘#rick-and-morty-  characters’);
+  const charactersDiv = document.querySelector(‘#rick-and-morty-characters’);
   characters.forEach(character => {
     const characterElement = document.createElement(‘p’);
     characterElement.innerText = `Character Name: ${character.name}`;
