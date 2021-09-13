@@ -6,7 +6,7 @@ showCharacters = characters => {
   const charactersDiv = document.querySelector('#rick-and-morty-characters');
   characters.forEach(character => {
     const characterElement = document.createElement('p');
-    characterElement.innerText = `Character Name: ${character.count}`;
+    characterElement.innerText = `Character Name: ${character.name}`;
     charactersDiv.append(characterElement);
   });
 }
