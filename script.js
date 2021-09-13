@@ -1,4 +1,4 @@
-fetch('https://lyrania.co.uk/api/guilds.php?type=members&api_code=2798501')
+fetch('https://rickandmortyapi.com/api/character/')
   .then(response => response.json())
   .then(characters => showCharacters(characters.results));
 
